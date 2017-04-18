@@ -11,15 +11,16 @@ public class OrphanBlack {
 	public static void main(String[] args) {
 		try {
 			@SuppressWarnings("resource")
-			BufferedReader sc = new BufferedReader(new FileReader(new File("unit2/DATA11.txt")));
-			String dna;
-			dna = sc.readLine();
-			String irrelevant = sc.readLine();
-			if (!(messageFinder(toBinary(dna, 1))).equals("")) {
-				System.out.println(messageFinder(toBinary(dna, 1)));
-			}
-			else {
-				System.out.println(messageFinder(toBinary(dna, 2)));
+			BufferedReader sc = new BufferedReader(new FileReader(new File("src/mcmullin/DATA11.txt")));
+			for (int i = 0; i < 10; i++) {
+				String dna = sc.readLine();
+				String irrelevant = sc.readLine();//just to skip next line of input
+				if (!(messageFinder(toBinary(dna, 1))).equals("")) {
+					System.out.println(messageFinder(toBinary(dna, 1)));
+				}
+				else {
+					System.out.println(messageFinder(toBinary(dna, 2)));
+				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -33,8 +34,10 @@ public class OrphanBlack {
 			counter = i;
 			askee = "";
 			String a = ""; 
-			while(((s.length()-1)-counter) >=8 && !a.equals(".")){
+			while(((s.length())-counter) >7 && !a.equals(".")){
 				a = getLetter(s.substring(counter, counter + 8));
+				System.out.print(counter);
+				System.out.println(a);
 				if(!a.equals(".") ){
 					askee += a;
 					counter += 8;
@@ -70,7 +73,6 @@ public class OrphanBlack {
 	}
 
 	public static String getLetter(String s) {
-
 		switch (s) {
 		case "00100000": return " ";//space
 		case "01000001": return "A";
