@@ -14,6 +14,7 @@ public class OrphanBlack {
 			BufferedReader sc = new BufferedReader(new FileReader(new File("src/mcmullin/DATA11.txt")));
 			for (int i = 0; i < 10; i++) {
 				String dna = sc.readLine();
+				@SuppressWarnings("unused")
 				String irrelevant = sc.readLine();//just to skip next line of input
 				if (!(messageFinder(toBinary(dna, 1))).equals("")) {
 					System.out.println(messageFinder(toBinary(dna, 1)));
