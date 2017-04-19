@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 /**
+ * SumDigits.java
  * 03/04/2017
  * @author Cole McMullin
  *finds the sum of the digits of a number inputed by the user
