@@ -1,14 +1,18 @@
 package mcmullin;
 
 import java.util.Scanner;
-
+/**
+ * WordFlipping.java
+ * @author Cole McMullin
+ *	4/19/2017
+ *	prints out words backwards
+ */
 public class WordFlipping {
 	
 
 	static Scanner in = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		String[] sentence  = in.nextLine().split(" ");
 		String output = "";
