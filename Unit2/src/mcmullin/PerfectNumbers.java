@@ -4,6 +4,7 @@
 package mcmullin;
 
 /**
+ * PerfectNumbers.java
  * @author Cole McMullin
  * 4/19/2017
  * prints all numbers less than 100 that are the sum of all their factors 
