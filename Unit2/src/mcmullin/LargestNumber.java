@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 /**
+ * LargestNumber
  * 03/04/2017
  * @author Cole McMullin
  *finds the largest of a series of numbers inputed by the user
