@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 /**
+ * GCF.java
  * 03/04/2017
  * @author Cole McMullin
  *finds the greatest common factor of 2 numbers inputed by the user

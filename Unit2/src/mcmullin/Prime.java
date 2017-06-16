@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 /**
+ * Prime.java
  * 03/04/2017
  * @author Cole McMullin
  *finds the out if a number inputed by the user, is prime
